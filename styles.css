@@ -1,0 +1,337 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.card{
+    background-image: url(images/form\ background.png);
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 2em;
+    min-height: 85vh;
+    margin-bottom: 2em;
+    border: 2px solid #000;
+    border-radius: 2em;
+    align-items: center;
+    display: none;
+}
+.card.active{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 2em;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    color:#000;
+    text-decoration: underline bold 1px solid #000;
+}
+.content{
+    border-left: 1px solid #000;
+}
+input[type="text"]{
+    border-radius: 5px;
+    height: 2em;
+    border: 1px solid #000;
+    width:  13em;
+}
+input[type="text"], label{
+    display: block;
+}
+input[type="date"]{
+    border-radius: 5px;
+    height: 2em;
+    border: 1px solid #000;
+    width:  13em;
+}
+input[type="checkbox"]{
+    border-radius: 5px;
+    height: 2em;
+    border: 1px solid #000;
+}
+input[type="radio"]{
+    float:left;
+}
+.content{
+    padding-left: 5em;
+}
+h4 {
+   margin-left: 15em;
+   margin-bottom: 1em;
+}
+span{
+    font-weight: lighter;
+}
+label{
+    margin-bottom: -0.001em;
+    font-size: 0.8em;
+    margin-left: 1em;
+}
+h6, h4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+div{
+    margin-bottom: 0.7em;
+}
+.buttons{
+    margin-top: 3em;
+    margin-left: 45em;
+    display:flex;
+    height: 2.3em;
+}
+#btn-next{
+    width: 6em;
+    border: 1.5px solid #000;
+    color: #000;
+    border-radius: 7px;
+    background-color: #FFF;
+}
+#btn-next:hover{
+    width: 6em;
+    border: 1.5px solid #000;
+    color: #FFF;
+    border-radius: 7px;
+    background-color: rgb(68, 65, 65);
+}
+#btn-previous{
+    width: 6em;
+    border: 1.5px solid #000;
+    color: #000;
+    border-radius: 7px;
+    margin-right: 1em;
+    background-color: rgb(185, 184, 184);
+}
+#btn-previous:hover{
+    width: 6em;
+    border: 1.5px solid #000;
+    color: #FFF;
+    border-radius: 7px;
+    background-color: rgb(68, 65, 65);
+}
+/* Names */
+.names{
+    display: grid;
+    grid-template-columns: 33% 33%;
+    margin-bottom: 2em;
+}
+
+/* Identification */
+.identification{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+/* Contact Information */
+.contact-info{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+/* Residence */
+.residence{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 1em;
+}
+
+/*  Page Two - Birth and Nationality Information */
+.birth-info{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.birth-location{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.nationality{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.nationality h6, p{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.nationality label{
+    font-size: 1em;
+}
+.language{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+
+/* Page Three - Marital Status */
+.marital-status{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 2em;
+}
+.marital-status p{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.marital-status input[type="radio"], input[type="checkbox"]{
+   float:left;
+   size: 50em !important;
+   border-radius: 2px;
+   
+}
+.marital-status input[type="radio"]{
+    float:left;
+    height: 1.1em;
+    width: 1.5em;
+    border-radius: none;
+    background-color: #FFF;
+ }
+.marital-status label{
+    font-size: 1em;
+    margin-left: 1.4em;
+}
+.spouse-details{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.child-checkbox{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 1em;
+}
+.child-checkbox p{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.child-checkbox label{
+    font-size: 1em;
+    margin-left: 1.4em;
+}
+.child-details{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 1em;
+}
+/* Part 4 - Employment Information */
+.work-details{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.employment-nature{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 1em;
+}
+.employment-nature h6{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.employment-nature label{
+    font-size: 1em;
+    margin-left: 1.4em;
+}
+/* Part 5: Educational qualifications */
+.school-attended{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 1em;
+}
+.school-attended h6{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.school-attended input[type="checkbox"]{
+    width: 1.5em;
+    margin-right: 0.5em;
+}
+.school-attended label{
+    margin-top: 0.4em;
+    font-size: 0.9em;
+}
+
+#education-other-last{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.highest-education{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 1em;
+}
+/* Part 6 - Membership to professional organization */
+.membership-details{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+
+/* Part 7 - Reasons for delcaration */
+.reasons{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.reasons h6{
+    margin-bottom: 2em;
+}
+.reasons input[type="radio"] label{
+    font-size: 1.2em;
+    margin-left: 1.4em;
+}
+#reasons-other{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 1.5em;
+}
+.workstation{
+    margin-top: 1.5em;
+}
+/* Part 8 - Moral and ethical questions */
+.moral{
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    margin-bottom: 2em;
+    align-items: center;
+}
+.moral label{
+    font-size: 1em;
+}
+.moral .btn-next{
+    width: 6em;
+}
+/* Part 9 - Oath and declaration */
+.oath-info{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.sworn-info{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 2em;
+}
+.signature{
+    margin-bottom: 5em;
+    /* float: left; */
+}
+.signature label{
+    font-size: 0.85em;
+}
+.signature input{
+    height: 1.2em;
+}
+.signature-box{
+    float: left;
+    /* font-size: 0.8em; */
+}

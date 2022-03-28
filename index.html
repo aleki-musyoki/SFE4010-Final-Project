@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+  <body>
+    <!-- Beginning of the form -->
+      <form data-multi-step>
+        <!-- Part 1: General Information -->
+          <div class="card" id="one" data-step>
+            <h4 class="div-header">1. General Information</h4>
+            <div class="side-nav">
+              <strong><p class="side-content">1. General Information</p></strong>
+              <a data-next href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a data-next href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a data-next href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
+              <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+            <div class="content">
+              <div class="names">
+                <h6 class="div-header">Names</h6>
+                <div>
+                  <label for="title">Title</label>
+                  <input type="text" name="title" id="title">
+                </div>
+
+                <div>
+                  <label for="gender">Gender</label>
+                <input type="text" name="gender" id="gender">
+                </div>
+                <div>
+                  <label for="first-name" id="first-name">First Name</label>
+                  <input type="text" name="first-name" id="first-name">
+                </div>
+                <div>
+                  <label for="middle-name">Middle Name</label>
+                <input type="text" name="middle-name" id="middle-name">
+                </div>
+                <div>
+                  <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname">
+                </div>
+
+              </div>
+
+              <div class="identification">
+                <h6 class="div-header">Identification</h6>
+                <div>
+                  <label for="national-id">National ID</label>
+                <input type="text" name="national-id" id="national-id">
+                </div>
+                <div>
+                  <label for="passport-no">Passport No.</label>
+                  <input type="text" name="passport-no" id="passport-no">
+                </div>
+                <div>
+                  <label for="kra-pin">KRA Pin No.</label>
+                <input type="text" name="kra-pin" id="kra-pin">
+                </div>
+              </div>
+
+              <div class="contact-info">
+                  <h6 class="div-header">Contact Information</h6>
+
+                  <div>
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email">
+                  </div>
+                  <div>
+                    <label for="telephone">Telephone No</label>
+                    <input type="text" name="telephone" id="telephone">
+                  </div>
+                  <div>
+                    <label for="mobile">Mobile No.</label>
+                    <input type="text" name="mobile" id="mobile">
+                  </div>
+                  <div>
+                    <label for="postal-address">Postal Address</label>
+                    <input type="text" name="postal-address" id="postal-address">
+                  </div>
+                  <div>
+                    <label for="postal-code">Postal Code</label>
+                  <input type="text" name="postal-code" id="postal-code">
+                  </div>
+              </div>
+
+              <div class="residence">
+                  <h6 class="div-header">Residence</h6>
+                  <div>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+                  </div>
+                  <div>
+                    <label for="county">County</label>
+                    <input type="text" name="county" id="county">
+                  </div>
+                  <div>
+                    <label for="town">Town</label>
+                    <input type="text" name="town" id="town">
+                  </div>
+                  <div>
+                    <label for="estate">Estate/Town/Location</label>
+                    <input type="text" name="estate" id="estate">
+                  </div>
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>
+            </div>
+              
+            <!-- Part 2: Birth & Nationality Information -->
+
+          </div>
+          <div class="card" id="two" data-step>
+            <h4 class="div-header">2. Birth & Nationality Information</h4>
+            <div class="side-nav">
+              <a href="#one"><p class="side-content">1. General Information</p></a>
+              <strong><p class="side-content">2. Birth & Nationality Information</p></strong>
+              <a data-next href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a data-next href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
+              <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+
+            <div class="content">
+              <div class="birth-info">
+                <h6 class="div-header">Birth Information</h6>
+                <div>
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" name="dob" id="dob">
+                </div>
+                <div>
+                  <label for="birth-cert">Birth Certificate No.</label>
+                  <input type="text" name="birth-cert" id="birth-cert">
+                </div>
+
+                </div>
+                <div class="birth-location">
+                <h6 class="birth-sub-head">Location</h6>
+
+                <div>
+                  <label for="birth-place">Place of Birth</label>
+                  <input type="text" name="birth-place" id="birth-place">
+                </div>
+                <div>
+                  <label for="birth-district">District of Birth</label>
+                <input type="text" name="birth-district" id="birth-district">
+                </div>
+                <div>
+                  <label for="birth-county">County of Birth</label>
+                <input type="text" name="birth-county" id="birth-county">
+                </div>
+                <div>
+                  <label for="birth-country">Country of Birth</label>
+                <input type="text" name="birth-country" id="birth-country">
+                </div>
+
+              </div>
+
+              <div class="nationality">
+                <h6 class="div-header">Nationality</h6>
+                
+                <p class="question">Are you Kenyan?</p>
+
+                <div>
+                  <input type="radio" name="kenyan" id="kenyan-yes" value="Yes">
+                  <label for="kenyan-yes">Yes</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="kenyan" id="kenyan-no" value="No">
+                  <label for="kenyan-no">No</label>
+                </div>
+
+                <p class="question">Are you a dual citizen?</p>
+                <div>
+                  <input type="radio" name="dual-citizen" id="dual-yes" value="Yes">
+                  <label for="dual-yes">Yes</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="dual-citizen" id="dual-no" value="No">
+                  <label for="dual-no">No</label>
+                </div>
+
+              </div>
+
+              <div class="language">
+                <h6 class="div-header">Language</h6>
+                <div>
+                  <label for="first-language">First Language</label>
+                  <input type="text" name="first-language" id="first-language">
+                </div>
+                <div>
+                  <label for="second-language">Second Language</label>
+                  <input type="text" name="second-language" id="second-language">
+                </div>
+
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Previous" id="btn-previous">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>  
+            </div>
+          </div>
+
+          <!-- Part 3: Marital status -->
+
+          <div class="card" id="three" data-step>
+
+                <h4 class="div-header">3. Marital Status</h4>
+
+                <div class="side-nav">
+                  <a href="#one"><p class="side-content">1. General Information</p></a>
+                  <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+                  <strong><p class="side-content">3. Marital Status</p></strong>
+                  <a data-next href="#four"><p class="side-content">4. Employment Information</p></a>
+                  <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
+                  <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+                  <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+                  <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+                  <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+                </div>
+
+                <div class="content">
+                  <h6 class="div-header">Marital Status</h6>
+                  <div class="marital-status">
+                    <p class="question">What is your marital status?</p>
+                    <div>
+                      <input type="radio" name="marital-options" id="single" value="Single">
+                      <label for="single">Single</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="married" value="Married">
+                      <label for="married">Married</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="separated" value="Separated">
+                      <label for="separated">Separated</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="divorced" value="Divorced">
+                      <label for="divorced">Divorced</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="widowed" value="Widowed">
+                      <label for="widowed">Widowed</label>
+                    </div>
+
+                  </div>
+
+                  <div class="spouse-details">
+                    <h6 class="div-header">Spouse Details</h6>
+                    <div>
+                      <label for="spouse-firstname">First Name</label>
+                      <input type="text" name="spouse-firstname" id="spouse-firstname">
+                    </div>
+                    <div>
+                      <label for="spouse-middlename">Middle Name</label>
+                      <input type="text" name="spouse-middlename" id="spouse-middlename">
+                    </div>
+                    <div>
+                      <label for="spouse-surname">Surname</label>
+                    <input type="text" name="spouse-surname" id="spouse-surname">
+                    </div>
+
+                    <div>
+                      <label for="spouse-nationality">Nationality</label>
+                      <input type="text" name="spouse-nationality" id="spouse-nationality">
+                    </div>
+                  </div>
+
+                  <div class="child-checkbox">
+                    <h6 class="div-header">Children</h6>
+                    <p class="question">Do you have children?</p>
+
+                    <div>
+                      <input type="radio" name="children" id="child-yes" value="Yes">
+                    <label for="child-yes">Yes</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" name="children" id="child-no" value="No">
+                    <label for="child-no">No</label>
+                    </div>
+
+                  </div>
+
+                  <div class="child-details">
+                    <h6 class="div-header">Children Details</h6>
+                    <div>
+                      <label for="child-firstname">First Name</label>
+                      <input type="text" name="child-firstname" id="child-firstname">
+                    </div>
+
+                    <div>
+                      <label for="child-middlename">Middle Name</label>
+                      <input type="text" name="child-middlename" id="child-middlename">
+                    </div>
+
+                    <div>
+                      <label for="child-surname">Surname</label>
+                      <input type="text" name="child-surname" id="child-surname">
+                    </div>
+
+                    <div>
+                      <label for="child-nationality">Nationality</label>
+                      <input type="text" name="child-nationality" id="child-nationality">
+                    </div>
+
+                  </div>
+
+                  <div class="buttons">
+                    <input type="button" data-previous value="Previous" id="btn-previous">
+                    <input type="button" data-next value="Next" id="btn-next">
+                  </div>
+                </div>
+            </div>
+
+            <!-- Part 4: Employment Information -->
+
+          <div class="card" id="four" data-step>
+              <h4 class="div-header">4. Employment Information</h4>
+
+              <div class="side-nav">
+                <a href="#one"><p class="side-content">1. General Information</p></a>
+                  <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+                  <a href="#three"><p class="side-content">3. Marital Status</p></a>
+                  <strong><p class="side-content">4. Employment Information</p></strong>
+                  <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
+                  <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+                  <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+                  <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+                  <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+              </div>
+
+              <div class="content">
+                <div class="work-details">
+                  <h6 class="div-header">Work Details</h6>
+  
+                  <div>
+                    <label for="employer-name">Name of Employer</label>
+                    <input type="text" name="employer-name" id="employer-name">
+                  </div>
+                  <div>
+                    <label for="employer-name">Name of Employer</label>
+                    <input type="text" name="employer-name" id="employer-name">
+                  </div>
+                  <div>
+                    <label for="position">Position/Rank</label>
+                    <input type="text" name="position" id="position">
+                  </div>
+                  <div>
+                    <label for="start-date">Start Date</label>
+                    <input type="date" name="start-date" id="start-date">
+                  </div>
+                  <div>
+                    <label for="present-date">Date of present appointment</label>
+                    <input type="date" name="present-date" id="present-date">
+                  </div>
+                  <div>
+                    <label for="workstation">Workstation</label>
+                  <input type="text" name="workstation" id="workstation">
+                  </div>
+
+                </div>
+  
+                <div class="employment-nature">
+                  <h6 class="div-header">Nature of employment</h6>
+                  <div>
+                    <input type="radio" name="employment-options" id="constitutional" value="constitutional">
+                    <label for="constitutional">Constitutional</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="employment-options" id="elective" value="elective">
+                    <label for="elective">Elective</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="employment-options" id="permanent" value="permanent">
+                    <label for="permanent">Permanent</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="employment-options" id="contractual" value="contractual">
+                    <label for="contractual">Contractual</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" name="employment-options" id="employment-other" value="employment-other">
+                    <label for="employment-other">Other</label>
+                  </div>
+
+                  <div>
+                    <label for="employment-other-text">Other</label>
+                    <input type="text" name="employment-other-text" id="employment-other-text">
+                  </div>
+
+                </div>
+
+                <div class="buttons">
+                  <input type="button" data-previous value="Previous" id="btn-previous">
+                  <input type="button" data-next value="Next" id="btn-next">
+                </div>
+              </div>
+            </div>
+          
+            <!-- Part 5: Educational Information -->
+
+          <div class="card" id="five" data-step>
+            <h4 class="div-header">5. Educational Information</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content">1. General Information</p></a>
+              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a href="#four"><p class="side-content">4. Employment Information</p></a>
+              <strong><p class="side-content">5. Educational Information</p></strong>
+              <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+
+            <div class="content">
+              <div class="school-attended">
+                <h6 class="div-header">Nature of employment</h6>
+                    <div>
+                      <input type="checkbox" name="education-options" id="primary" value="primary">
+                      <label for="primary">Primary</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="education-options" id="secondary" value="secondary">
+                      <label for="secondary">Secondary</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="education-options" id="a-level" value="a-level">
+                      <label for="a-level">A-Level</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="education-options" id="diploma" value="diploma">
+                      <label for="diploma">Diploma</label>
+                    </div>
+  
+                    <div>
+                      <input type="checkbox" name="education-options" id="degree" value="degree">
+                      <label for="degree">Degree</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" name="education-options" id="masters" value="masters">
+                      <label for="masters">Masters</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" name="education-options" id="phd" value="phd">
+                      <label for="phd">PhD</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" name="education-options" id="education-other" value="education-other">
+                      <label for="education-other-text">Other</label>
+                    </div>
+  
+                    <div id="education-other-last">
+                      <label for="education-other-text">Other</label>
+                      <input type="text" name="education-other-text" id="education-other-text">
+                    </div>
+              </div>
+
+              <div class="highest-education">
+                <h6 class="div-header">Highest Academic Qualification Obtained</h6>
+                <div>
+                  <label for="qualification">Qualification</label>
+                  <input type="text" name="qualification" id="qualification">
+                </div>
+
+                <div>
+                  <label for="institution">Institution</label>
+                  <input type="text" name="institution" id="institution">
+                </div>
+
+                <div>
+                  <label for="year">Year</label>
+                  <input type="text" name="year" id="year">
+                </div>
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Previous" id="btn-previous">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Part 6: Membership to Professional Organizations -->
+
+          <div class="card" id="six" data-step>
+            <h4 class="div-header">6. Membership to professional Organizations</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content">1. General Information</p></a>
+              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a href="#five"><p class="side-content">5. Educational Information</p></a>
+              <strong><p class="side-content">6. Membership of professional organizations</p></strong>
+              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+
+            <div class="content">
+              <div class="membership-details">
+                <h6 class="div-header">Membership details</h6>
+                <div>
+                  <label for="organization-name">Name of Organization</label>
+                  <input type="text" name="organization-name" id="organization-name">
+                </div>
+
+                <div>
+                  <label for="membership-number">Membership No.</label>
+                  <input type="text" name="membership-number" id="membership-number">
+                </div>
+
+                <div>
+                  <label for="admission-date">Date of admission</label>
+                  <input type="date" name="admission-date" id="admission-date">
+                </div>
+
+                <div>
+                  <label for="organization-name">Name of Organization</label>
+                  <input type="text" name="organization-name" id="organization-name">
+                </div>
+
+                <div>
+                  <label for="membership-number">Membership No.</label>
+                  <input type="text" name="membership-number" id="membership-number">
+                </div>
+
+                <div>
+                  <label for="admission-date">Date of admission</label>
+                  <input type="date" name="admission-date" id="admission-date">
+                </div>
+
+                <div>
+                  <label for="organization-name">Name of Organization</label>
+                  <input type="text" name="organization-name" id="organization-name">
+                </div>
+
+                <div>
+                  <label for="membership-number">Membership No.</label>
+                  <input type="text" name="membership-number" id="membership-number">
+                </div>
+
+                <div>
+                  <label for="admission-date">Date of admission</label>
+                  <input type="date" name="admission-date" id="admission-date">
+                </div>
+
+                <div>
+                  <label for="organization-name">Name of Organization</label>
+                  <input type="text" name="organization-name" id="organization-name">
+                </div>
+
+                <div>
+                  <label for="membership-number">Membership No.</label>
+                  <input type="text" name="membership-number" id="membership-number">
+                </div>
+
+                <div>
+                  <label for="admission-date">Date of admission</label>
+                  <input type="date" name="admission-date" id="admission-date">
+                </div>
+
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Previous" id="btn-previous">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 7: Reason(s) for declaration -->
+
+          <div class="card" id="seven" data-step>
+            <h4 class="div-header">7. Reason(s) for declaration</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content">1. General Information</p></a>
+              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a href="#five"><p class="side-content">5. Educational Information</p></a>
+              <a href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <strong><p class="side-content">7. Reason(s) for declaration</p></strong>
+              <a href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+              <a href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+
+            <div class="content">
+              <div class="reasons">
+                <h6 class="div-header">Reasons for declaration</h6>
+                <div>
+                  <input type="radio" name="employment-options" id="permanent" value="permanent">
+                  <label for="permanent">Election</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="employment-options" id="contractual" value="contractual">
+                  <label for="contractual">Employment</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="employment-options" id="employment-other" value="employment-other">
+                  <label for="employment-other">Other</label>
+                </div>
+
+                <div id="reasons-other">
+                  <label for="reasons-other-text">Other</label>
+                  <input type="text" name="reasons-other-text" id="reasons-other-text">
+                </div>
+
+                <div>
+                  <label for="workstation">Workstation</label>
+                  <input type="text" name="workstation" id="workstation">
+                </div>
+
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Previous" id="btn-previous">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Part 8-a: Moral and ethical questions -->
+
+          <div class="card" id="eight" data-step>
+            <h4 class="div-header">8. Moral and Ethical Questions</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content">1. General Information</p></a>
+              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a data-previous href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a data-previous href="#five"><p class="side-content">5. Educational Information</p></a>
+              <a data-previous href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <a data-previous href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <strong><p class="side-content">8. Moral and ethical questions</p></strong>
+              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+
+            <div class="content moral">
+              <div>
+                <p class="moral-questions">Q1. Have you ever engaged in any form of dishonesty in the conduct of
+                  public affairs?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+              <label for="moral-no">No</label>
+              </div>
+
+              <div>
+                <p class="moral-questions">Q2. Have you ever abused a public office?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q3. Have you ever misrepresented information to the public?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q4. Have you ever engaged in wrongful conduct whilst in the furtherance of
+                  personal benefit?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+              <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q5. Have you ever misused public resources?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q6. Have you ever discriminated against anyone of any grounds other than
+                  as provided for under the Constitution or any other law?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q7. Have you ever falsified official or personal records?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q8. Have you ever been debarred or removed from the Register of
+                  Members of your professional organization?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Previous" id="btn-previous">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 8-b: Moral and ethical questions -->
+
+          <div class="card" data-step>
+            <h4 class="div-header">8. Moral and Ethical Questions</h4>
+
+            <div class="side-nav">
+              <a data-previous href="#one"><p class="side-content">1. General Information</p></a>
+              <a data-previous href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a data-previous href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a data-previous href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a data-previous href="#five"><p class="side-content">5. Educational Information</p></a>
+              <a data-previous href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <a data-previous href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <strong><p class="side-content">8. Moral and ethical questions</p></strong>
+              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            </div>
+
+            <div class="content moral">
+              <div>
+                <p class="moral-questions">Q9. Have you ever had any occupational or vocational license revoked
+                  and/or otherwise subjected to any other disciplinary action for cause in
+                  Kenya or any other country?
+                </p>
+              </div>
+              
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q10. Have you ever dismissed from employment on account of lack of
+                  integrity?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q11. Have you ever misrepresented information to the public?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q12. If you have been a public officer, have you ever failed to declare your
+                  Income, Assets and Liabilities as required under the Public Officer Ethics
+                  Act, 2003?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q13. Have you ever been the subject of disciplinary or criminal proceedings
+                  for breach of the Public Officer Ethics Act, 2003 or a Code prescribed thereunder?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q14. Have you ever been convicted of any offence and sentenced to serve
+                  imprisonment for a period of at least six months?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">Q15.  Have you ever had an application for a Certificate of Clearance or a
+                  Certificate of Good Conduct or for a visa or other document authorizing
+                  work in a public office denied and/or rejected for cause in Kenya or any
+                  other country?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Yes</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">No</label>
+              </div>
+  
+              
+
+              <div class="buttons">
+                <input type="button" data-previous value="Previous" id="btn-previous">
+                <input type="button" data-next value="Next" id="btn-next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 9: Oath and declaration -->
+
+          <div class="card" id="nine" data-step>
+            <h4 class="div-header">9. Oath and declaration</h4>
+
+            <div class="side-nav">
+              <a data-previous href="#one"><p class="side-content">1. General Information</p></a>
+              <a data-previous href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
+              <a data-previous href="#three"><p class="side-content">3. Marital Status</p></a>
+              <a data-previous href="#four"><p class="side-content">4. Employment Information</p></a>
+              <a data-previous href="#five"><p class="side-content">5. Educational Information</p></a>
+              <a data-previous href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
+              <a data-previous href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
+              <a data-previous href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
+              <strong><p class="side-content">9. Oath and declaration</p></strong>
+            </div>
+
+            <div class="content">
+              <h6 class="div-header">Oath and affirmation</h6>
+            <p class="oath">I solemnly swear (or affirm) and certify, under penalty of false declaration under the Oaths and
+              Statutory Declarations Act (Cap 15 of the Laws of Kenya), that all the foregoing statements in this
+              declaration are true and correct to the best of my knowledge.
+            </p>
+
+            <div class="oath-info">
+              <div>
+                <label for="organization-name">Dated at</label>
+                <input type="text" name="organization-name" id="organization-name">
+              </div>
+
+              <div>
+                <label for="membership-number">this</label>
+                <input type="text" name="membership-number" id="membership-number">
+              </div>
+
+              <div>
+                <label for="admission-date">Day of</label>
+                <input type="date" name="admission-date" id="admission-date">
+              </div>
+            </div>
+
+            <h6 class="div-header">Sworn/declared before me</h6>
+
+            <div class="sworn-info">
+              <div>
+                <label for="sworn-this">This</label>
+                <input type="text" name="sworn-this" id="sworn-this">
+              </div>
+              
+              <div>
+                <label for="sworn-day">day of</label>
+                <input type="text" name="sworn-day" id="sworn-day">
+              </div>
+
+              <div>
+                <label for="sworn-year">(year)</label>
+                <input type="date" name="sworn-year" id="sworn-year">
+              </div>
+
+              <div>
+                <label for="sworn-at">At</label>
+                <input type="text" name="sworn-at" id="sworn-at">
+              </div>
+
+            </div>
+
+            <div class="signature">
+              <h6 class="div-header">Signature of declarant <span>(Clicking the button is equivalent to a signature)</span></h6>
+              <div class="signature-box">
+                <input type="checkbox" name="signature" id="signature" value="Yes">
+                <label for="signature">I Accept</label>
+              </div>
+              
+            </div>
+
+            <div class="buttons">
+              <input type="button" data-previous value="Previous" id="btn-previous">
+              <input type="button" value="Submit" id="btn-next">
+            </div>
+            </div>
+          </div>
+      </form>
+      <!-- End of form -->
+  </body>
+</html>
