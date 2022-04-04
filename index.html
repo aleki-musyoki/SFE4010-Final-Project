@@ -9,166 +9,232 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/07a4a1e3d0.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
   <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light scrolled">
+      <div class="container">
+        <img class="navbar-brand logo" src="images/logo.png" alt=""><span>EACC Self-Declaration Form</span>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="start.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- Beginning of the form -->
       <form data-multi-step>
         <!-- Part 1: General Information -->
-          <div class="card" id="one" data-step>
+          <div class="card" id="div-1" data-step>
             <h4 class="div-header">1. General Information</h4>
-            <div class="side-nav">
-              <strong><p class="side-content">1. General Information</p></strong>
-              <a data-next href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a data-next href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a data-next href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
-              <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+            <div class="side-nav" id="data-page">
+              <strong><p class="side-content error">1. General Information<i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i> </p></strong>
+              <a data-tag id="two"><p class="side-content error"> 2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a> 
+              <a data-tag id="three"><p class="side-content error">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="four"><p class="side-content error">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="five"><p class="side-content error">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="six"><p class="side-content error">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="seven"><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i> </p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
             </div>
-            <div class="content">
+            <div id="content" class="content">
               <div class="names">
                 <h6 class="div-header">Names</h6>
-                <div>
-                  <label for="title">Title</label>
-                  <input type="text" name="title" id="title">
+                <div class="form-div">
+                  <label for="title">Title*</label>
+                  <select class="" type="text" name="title" id="title">
+                    <option value="dr">Dr.</option>
+                    <option value="prof">Prof.</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="miss">Miss</option>
+                  </select>
                 </div>
 
-                <div>
-                  <label for="gender">Gender</label>
-                <input type="text" name="gender" id="gender">
+                <div class="form-div">
+                  <label for="gender">Gender*</label>
+                  <select class="" type="text" name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="form-div">
+                  <label for="first-name" id="first-name">First Name*</label>
+                  <input class="" type="text" required name="first-name" id="first-name">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="middle-name">Middle Name*</label>
+                  <input class="" type="text" required name="middle-name" id="middle-name">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="surname">Surname*</label>
+                  <input class="" type="text" required name="surname" id="surname">
+                  <small>Cannot be blank</small>
                 </div>
                 <div>
-                  <label for="first-name" id="first-name">First Name</label>
-                  <input type="text" name="first-name" id="first-name">
-                </div>
-                <div>
-                  <label for="middle-name">Middle Name</label>
-                <input type="text" name="middle-name" id="middle-name">
-                </div>
-                <div>
-                  <label for="surname">Surname</label>
-                <input type="text" name="surname" id="surname">
+                  <label for="surname">Other Names</label>
+                  <input type="text" name="surname" id="surname">
                 </div>
 
               </div>
 
               <div class="identification">
                 <h6 class="div-header">Identification</h6>
-                <div>
-                  <label for="national-id">National ID</label>
-                <input type="text" name="national-id" id="national-id">
+                <div class="form-div">
+                  <label for="national-id">National ID*</label>
+                  <input class="" type="text" required name="national-id" id="national-id">
+                  <small>Cannot be blank</small>
                 </div>
-                <div>
-                  <label for="passport-no">Passport No.</label>
-                  <input type="text" name="passport-no" id="passport-no">
+                <div class="form-div">
+                  <label for="passport-no">Passport No.*</label>
+                  <input class="" type="text" required name="passport-no" id="passport-no">
+                  <small>Cannot be blank</small>
                 </div>
-                <div>
-                  <label for="kra-pin">KRA Pin No.</label>
-                <input type="text" name="kra-pin" id="kra-pin">
+                <div class="form-div">
+                  <label for="kra-pin">KRA Pin No.*</label>
+                  <input class="" type="text" required name="kra-pin" id="kra-pin">
+                  <small>Cannot be blank</small>
                 </div>
               </div>
 
               <div class="contact-info">
                   <h6 class="div-header">Contact Information</h6>
 
-                  <div>
-                    <label for="email">Email Address</label>
-                    <input type="text" name="email" id="email">
+                  <div class="form-div">
+                    <label for="email">Email Address*</label>
+                    <input class="" type="text"  required name="email" id="email">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="telephone">Telephone No</label>
-                    <input type="text" name="telephone" id="telephone">
+                  <div class="form-div">
+                    <label for="telephone">Telephone No*</label>
+                    <input class="" type="text" required name="telephone" id="telephone">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="mobile">Mobile No.</label>
-                    <input type="text" name="mobile" id="mobile">
+                  <div class="form-div">
+                    <label for="mobile">Mobile No.*</label>
+                    <input class="" type="text" required name="mobile" id="mobile">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="postal-address">Postal Address</label>
-                    <input type="text" name="postal-address" id="postal-address">
+                  <div class="form-div">
+                    <label for="other-num">Other Numbers</label>
+                    <input class="" type="text" required name="other-num" id="other-num">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="postal-code">Postal Code</label>
-                  <input type="text" name="postal-code" id="postal-code">
+                  <div class="form-div">
+                    <label for="postal-address">Postal Address*</label>
+                    <input class="" type="text" required name="postal-address" id="postal-address">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="postal-code">Postal Code*</label>
+                    <input class="" type="text" required name="postal-code" id="postal-code">
+                    <small>Cannot be blank</small>
                   </div>
               </div>
 
               <div class="residence">
                   <h6 class="div-header">Residence</h6>
-                  <div>
-                    <label for="country">Country</label>
-                    <input type="text" name="country" id="country">
+                  <div class="form-div">
+                    <label for="country">Country*</label>
+                    <input class="" type="text" required name="country" id="country">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="county">County</label>
-                    <input type="text" name="county" id="county">
+                  <div class="form-div">
+                    <label for="town">Town/City*</label>
+                    <input class="" type="text" required name="town" id="town">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="town">Town</label>
-                    <input type="text" name="town" id="town">
+                  <div class="form-div">
+                    <label for="county">County*</label>
+                    <input class="" type="text" required name="county" id="county">
+                    <small>Cannot be blank</small>
                   </div>
-                  <div>
-                    <label for="estate">Estate/Town/Location</label>
-                    <input type="text" name="estate" id="estate">
+                  <div class="form-div">
+                    <label for="district">District*</label>
+                    <input class="" type="text" required name="district" id="district">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="estate">Estate/Town/Location*</label>
+                    <input class="" type="text" required name="estate" id="estate">
+                    <small>Cannot be blank</small>
                   </div>
               </div>
 
               <div class="buttons">
-                <input type="button" data-next value="Next" id="btn-next">
+                <input type="button" onclick="formValidate()" data-next value="Next" id="btn-next">
               </div>
             </div>
-              
-            <!-- Part 2: Birth & Nationality Information -->
-
           </div>
-          <div class="card" id="two" data-step>
+          <!-- Part 2: Birth & Nationality Information -->
+          <div class="card" id="div-2" data-step>
             <h4 class="div-header">2. Birth & Nationality Information</h4>
             <div class="side-nav">
-              <a href="#one"><p class="side-content">1. General Information</p></a>
-              <strong><p class="side-content">2. Birth & Nationality Information</p></strong>
-              <a data-next href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a data-next href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
-              <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
-            </div>
+              <a href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-tag href="#three"><p class="side-content error">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#four"><p class="side-content error">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#five"><p class="side-content error">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#six"><p class="side-content error">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#seven"><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>            </div>
 
             <div class="content">
               <div class="birth-info">
                 <h6 class="div-header">Birth Information</h6>
-                <div>
-                  <label for="dob">Date of Birth</label>
-                  <input type="date" name="dob" id="dob">
+                <div class="form-div">
+                  <label for="dob">Date of Birth*</label>
+                  <input type="date" required name="dob" id="dob">
+                  <small>Cannot be blank</small>
                 </div>
-                <div>
-                  <label for="birth-cert">Birth Certificate No.</label>
-                  <input type="text" name="birth-cert" id="birth-cert">
+                <div class="form-div">
+                  <label for="birth-cert">Birth Certificate No.*</label>
+                  <input type="text" required name="birth-cert" id="birth-cert">
+                  <small>Cannot be blank</small>
                 </div>
 
-                </div>
+                </div class="form-div">
                 <div class="birth-location">
                 <h6 class="birth-sub-head">Location</h6>
 
-                <div>
-                  <label for="birth-place">Place of Birth</label>
-                  <input type="text" name="birth-place" id="birth-place">
+                <div class="form-div">
+                  <label for="birth-place">Place of Birth*</label>
+                  <input type="text" required name="birth-place" id="birth-place">
+                  <small>Cannot be blank</small>
                 </div>
-                <div>
-                  <label for="birth-district">District of Birth</label>
-                <input type="text" name="birth-district" id="birth-district">
+                <div class="form-div">
+                  <label for="birth-district">District of Birth*</label>
+                <input type="text" required name="birth-district" id="birth-district">
+                <small>Cannot be blank</small>
                 </div>
-                <div>
-                  <label for="birth-county">County of Birth</label>
-                <input type="text" name="birth-county" id="birth-county">
+                <div class="form-div">
+                  <label for="birth-county">County of Birth*</label>
+                  <input type="text" required name="birth-county" id="birth-county">
+                  <small>Cannot be blank</small>
                 </div>
-                <div>
-                  <label for="birth-country">Country of Birth</label>
-                <input type="text" name="birth-country" id="birth-country">
+                <div class="form-div">
+                  <label for="birth-country">Country of Birth*</label>
+                <input type="text" required name="birth-country" id="birth-country">
+                <small>Cannot be blank</small>
                 </div>
 
               </div>
@@ -176,9 +242,9 @@
               <div class="nationality">
                 <h6 class="div-header">Nationality</h6>
                 
-                <p class="question">Are you Kenyan?</p>
+                <p class="question">Are you Kenyan?*</p>
 
-                <div>
+                <div class="form-div">
                   <input type="radio" name="kenyan" id="kenyan-yes" value="Yes">
                   <label for="kenyan-yes">Yes</label>
                 </div>
@@ -188,8 +254,8 @@
                   <label for="kenyan-no">No</label>
                 </div>
 
-                <p class="question">Are you a dual citizen?</p>
-                <div>
+                <p class="question">Are you a dual citizen?*</p>
+                <div class="form-div">
                   <input type="radio" name="dual-citizen" id="dual-yes" value="Yes">
                   <label for="dual-yes">Yes</label>
                 </div>
@@ -199,17 +265,28 @@
                   <label for="dual-no">No</label>
                 </div>
 
+                <div>
+                  <label for="dual-details">If yes, provide details</label>
+                  <input type="text" required name="dual-details" id="dual-details">
+                </div>
+
               </div>
 
               <div class="language">
-                <h6 class="div-header">Language</h6>
-                <div>
-                  <label for="first-language">First Language</label>
-                  <input type="text" name="first-language" id="first-language">
+                <h6 class="div-header">Languages Spoken</h6>
+                <div class="form-div">
+                  <label for="first-language">First Language*</label>
+                  <input type="text" required name="first-language" id="first-language">
+                  <small>Cannot be blank</small>
                 </div>
                 <div>
                   <label for="second-language">Second Language</label>
                   <input type="text" name="second-language" id="second-language">
+                </div>
+
+                <div>
+                  <label for="other-language">Other Languages</label>
+                  <input type="text" name="other-language" id="other-language">
                 </div>
 
               </div>
@@ -223,20 +300,21 @@
 
           <!-- Part 3: Marital status -->
 
-          <div class="card" id="three" data-step>
+          <div class="card" id="div-3" data-step>
 
                 <h4 class="div-header">3. Marital Status</h4>
 
                 <div class="side-nav">
-                  <a href="#one"><p class="side-content">1. General Information</p></a>
-                  <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-                  <strong><p class="side-content">3. Marital Status</p></strong>
-                  <a data-next href="#four"><p class="side-content">4. Employment Information</p></a>
-                  <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
-                  <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-                  <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-                  <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-                  <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+                  <a data-tag href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <strong><p class="side-content error">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+                  <a data-tag href="#four"><p class="side-content error">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#five"><p class="side-content error">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#six"><p class="side-content error">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#seven"><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
                 </div>
 
                 <div class="content">
@@ -283,7 +361,7 @@
 
                     <div>
                       <label for="spouse-nationality">Nationality</label>
-                      <input type="text" name="spouse-nationality" id="spouse-nationality">
+                      <input type="text" required name="spouse-nationality" id="spouse-nationality">
                     </div>
                   </div>
 
@@ -304,7 +382,7 @@
                   </div>
 
                   <div class="child-details">
-                    <h6 class="div-header">Children Details</h6>
+                    <h6 class="div-header">If yes, provide children Details</h6>
                     <div>
                       <label for="child-firstname">First Name</label>
                       <input type="text" name="child-firstname" id="child-firstname">
@@ -339,48 +417,67 @@
           <div class="card" id="four" data-step>
               <h4 class="div-header">4. Employment Information</h4>
 
-              <div class="side-nav">
-                <a href="#one"><p class="side-content">1. General Information</p></a>
-                  <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-                  <a href="#three"><p class="side-content">3. Marital Status</p></a>
-                  <strong><p class="side-content">4. Employment Information</p></strong>
-                  <a data-next href="#five"><p class="side-content">5. Educational Information</p></a>
-                  <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-                  <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-                  <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-                  <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+              <div class="side-nav" data-page>
+                <a href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <strong><p class="side-content error">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+                  <a data-tag href="#five"><p class="side-content error">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#six"><p class="side-content error">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#seven"><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
               </div>
 
               <div class="content">
+                <h6 class="div-header">Work Details <span>(If none, please fill in with none and select the current date)</span></h6>
                 <div class="work-details">
-                  <h6 class="div-header">Work Details</h6>
-  
-                  <div>
-                    <label for="employer-name">Name of Employer</label>
-                    <input type="text" name="employer-name" id="employer-name">
-                  </div>
-                  <div>
-                    <label for="employer-name">Name of Employer</label>
-                    <input type="text" name="employer-name" id="employer-name">
-                  </div>
-                  <div>
-                    <label for="position">Position/Rank</label>
-                    <input type="text" name="position" id="position">
-                  </div>
-                  <div>
-                    <label for="start-date">Start Date</label>
-                    <input type="date" name="start-date" id="start-date">
-                  </div>
-                  <div>
-                    <label for="present-date">Date of present appointment</label>
-                    <input type="date" name="present-date" id="present-date">
-                  </div>
-                  <div>
-                    <label for="workstation">Workstation</label>
-                  <input type="text" name="workstation" id="workstation">
+                    <div>
+                      <label for="employer-name">Name of Employer</label>
+                      <input type="text" name="employer-name" id="employer-name">
+                    </div>
+                    <div>
+                      <label for="position">Position/Rank</label>
+                      <input type="text" name="position" id="position">
+                    </div>
+                    <div>
+                      <label for="start-date">Start Date</label>
+                      <input type="date" name="start-date" id="start-date">
+                    </div>
+                    <div>
+                      <label for="present-date">Date of present appointment</label>
+                      <input type="date" name="present-date" id="present-date">
+                    </div>
+                    <div>
+                      <label for="workstation">Workstation</label>
+                    <input type="text" name="workstation" id="workstation-one">
+                    </div>
+                </div>
+                  <div class="work-details-two">
+                    <div>
+                      <label for="employer-name">Name of Employer</label>
+                      <input type="text" name="employer-name" id="employer-name">
+                    </div>
+                    <div>
+                      <label for="position">Position/Rank</label>
+                      <input type="text" name="position" id="position">
+                    </div>
+                    <div>
+                      <label for="start-date">Start Date</label>
+                      <input type="date" name="start-date" id="start-date">
+                    </div>
+                    <div>
+                      <label for="present-date">Date of present appointment</label>
+                      <input type="date" name="present-date" id="present-date">
+                    </div>
+                    <div>
+                      <label for="workstation">Workstation</label>
+                    <input type="text" name="workstation" id="workstation">
+                    </div>
                   </div>
 
-                </div>
+                
   
                 <div class="employment-nature">
                   <h6 class="div-header">Nature of employment</h6>
@@ -426,15 +523,16 @@
             <h4 class="div-header">5. Educational Information</h4>
 
             <div class="side-nav">
-              <a href="#one"><p class="side-content">1. General Information</p></a>
-              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a href="#four"><p class="side-content">4. Employment Information</p></a>
-              <strong><p class="side-content">5. Educational Information</p></strong>
-              <a data-next href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+              <a data-tag href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#four"><p class="side-content success">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong data-tag><p class="side-content error">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-tag href="#six"><p class="side-content error">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#seven"><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
             </div>
 
             <div class="content">
@@ -442,7 +540,7 @@
                 <h6 class="div-header">Nature of employment</h6>
                     <div>
                       <input type="checkbox" name="education-options" id="primary" value="primary">
-                      <label for="primary">Primary</label>
+                      <label for="primary">Primary Certificate</label>
                     </div>
                     <div>
                       <input type="checkbox" name="education-options" id="secondary" value="secondary">
@@ -515,20 +613,21 @@
             <h4 class="div-header">6. Membership to professional Organizations</h4>
 
             <div class="side-nav">
-              <a href="#one"><p class="side-content">1. General Information</p></a>
-              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a href="#five"><p class="side-content">5. Educational Information</p></a>
-              <strong><p class="side-content">6. Membership of professional organizations</p></strong>
-              <a data-next href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <a data-next href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+              <a href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#four"><p class="side-content success">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#five"><p class="side-content success">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-next href="#seven"><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-next href="#eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
             </div>
 
             <div class="content">
               <div class="membership-details">
-                <h6 class="div-header">Membership details</h6>
+                <h6 class="div-header">Membership details, if any</h6>
                 <div>
                   <label for="organization-name">Name of Organization</label>
                   <input type="text" name="organization-name" id="organization-name">
@@ -604,15 +703,16 @@
             <h4 class="div-header">7. Reason(s) for declaration</h4>
 
             <div class="side-nav">
-              <a href="#one"><p class="side-content">1. General Information</p></a>
-              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a href="#five"><p class="side-content">5. Educational Information</p></a>
-              <a href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <strong><p class="side-content">7. Reason(s) for declaration</p></strong>
-              <a href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-              <a href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+              <a href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#four"><p class="side-content success">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#five"><p class="side-content success">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#six"><p class="side-content success">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a href="#eight"><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
             </div>
 
             <div class="content">
@@ -637,12 +737,6 @@
                   <label for="reasons-other-text">Other</label>
                   <input type="text" name="reasons-other-text" id="reasons-other-text">
                 </div>
-
-                <div>
-                  <label for="workstation">Workstation</label>
-                  <input type="text" name="workstation" id="workstation">
-                </div>
-
               </div>
 
               <div class="buttons">
@@ -660,16 +754,16 @@
             <h4 class="div-header">8. Moral and Ethical Questions</h4>
 
             <div class="side-nav">
-              <a href="#one"><p class="side-content">1. General Information</p></a>
-              <a href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a data-previous href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a data-previous href="#five"><p class="side-content">5. Educational Information</p></a>
-              <a data-previous href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <a data-previous href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <strong><p class="side-content">8. Moral and ethical questions</p></strong>
-              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
-            </div>
+              <a href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#four"><p class="side-content success">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#five"><p class="side-content success">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#six"><p class="side-content success">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#seven"><p class="side-content success">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>            </div>
 
             <div class="content moral">
               <div>
@@ -805,19 +899,20 @@
 
           <!-- Part 8-b: Moral and ethical questions -->
 
-          <div class="card" data-step>
-            <h4 class="div-header">8. Moral and Ethical Questions</h4>
+          <div class="card" id="nine" data-step>
+            <h4 class="div-header">8-b. Moral and Ethical Questions</h4>
 
             <div class="side-nav">
-              <a data-previous href="#one"><p class="side-content">1. General Information</p></a>
-              <a data-previous href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a data-previous href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a data-previous href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a data-previous href="#five"><p class="side-content">5. Educational Information</p></a>
-              <a data-previous href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <a data-previous href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <strong><p class="side-content">8. Moral and ethical questions</p></strong>
-              <a data-next href="#nine"><p class="side-content">9. Oath and declaration</p></a>
+              <a data-previous href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#four"><p class="side-content success">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#five"><p class="side-content success">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#six"><p class="side-content success">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#seven"><p class="side-content success">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#eight"><p class="side-content success">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-next href="#ten"><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
             </div>
 
             <div class="content moral">
@@ -855,22 +950,7 @@
               </div>
   
               <div>
-                <p class="moral-questions">Q11. Have you ever misrepresented information to the public?
-                </p>
-              </div>
-
-              <div>
-                <input type="radio" name="children" id="moral-yes" value="Yes">
-                <label for="moral-yes">Yes</label>
-              </div>
-  
-              <div>
-                <input type="radio" name="children" id="moral-no" value="No">
-                <label for="moral-no">No</label>
-              </div>
-  
-              <div>
-                <p class="moral-questions">Q12. If you have been a public officer, have you ever failed to declare your
+                <p class="moral-questions">Q11. If you have been a public officer, have you ever failed to declare your
                   Income, Assets and Liabilities as required under the Public Officer Ethics
                   Act, 2003?
                 </p>
@@ -887,7 +967,7 @@
               </div>
   
               <div>
-                <p class="moral-questions">Q13. Have you ever been the subject of disciplinary or criminal proceedings
+                <p class="moral-questions">Q12. Have you ever been the subject of disciplinary or criminal proceedings
                   for breach of the Public Officer Ethics Act, 2003 or a Code prescribed thereunder?
                 </p>
               </div>
@@ -903,7 +983,7 @@
               </div>
   
               <div>
-                <p class="moral-questions">Q14. Have you ever been convicted of any offence and sentenced to serve
+                <p class="moral-questions">Q13. Have you ever been convicted of any offence and sentenced to serve
                   imprisonment for a period of at least six months?
                 </p>
               </div>
@@ -919,7 +999,7 @@
               </div>
   
               <div>
-                <p class="moral-questions">Q15.  Have you ever had an application for a Certificate of Clearance or a
+                <p class="moral-questions">Q14.  Have you ever had an application for a Certificate of Clearance or a
                   Certificate of Good Conduct or for a visa or other document authorizing
                   work in a public office denied and/or rejected for cause in Kenya or any
                   other country?
@@ -947,19 +1027,20 @@
 
           <!-- Part 9: Oath and declaration -->
 
-          <div class="card" id="nine" data-step>
+          <div class="card" id="ten" data-step>
             <h4 class="div-header">9. Oath and declaration</h4>
 
             <div class="side-nav">
-              <a data-previous href="#one"><p class="side-content">1. General Information</p></a>
-              <a data-previous href="#two"><p class="side-content">2. Birth & Nationality Information</p></a>
-              <a data-previous href="#three"><p class="side-content">3. Marital Status</p></a>
-              <a data-previous href="#four"><p class="side-content">4. Employment Information</p></a>
-              <a data-previous href="#five"><p class="side-content">5. Educational Information</p></a>
-              <a data-previous href="#six"><p class="side-content">6. Membership of professional organizations</p></a>
-              <a data-previous href="#seven"><p class="side-content">7. Reason(s) for declaration</p></a>
-              <a data-previous href="#eight"><p class="side-content">8. Moral and ethical questions</p></a>
-              <strong><p class="side-content">9. Oath and declaration</p></strong>
+              <a data-previous href="#one"><p class="side-content success">1. General Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#two"><p class="side-content success">2. Birth & Nationality Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#three"><p class="side-content success">3. Marital Status <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#four"><p class="side-content success">4. Employment Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#five"><p class="side-content success">5. Educational Information <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#six"><p class="side-content success">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#seven"><p class="side-content success">7. Reason(s) for declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#eight"><p class="side-content success">8. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content success">8-b. Moral and ethical questions <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">9. Oath and declaration <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
             </div>
 
             <div class="content">
@@ -985,8 +1066,15 @@
                 <input type="date" name="admission-date" id="admission-date">
               </div>
             </div>
+            <div class="signature">
+              <h6 class="div-header">Signature of declarant</h6>
+              <div class="signature-box">
+                <input type="file" name="signature" id="signature" value="Yes">
+              </div>
+              
+            </div>
 
-            <h6 class="div-header">Sworn/declared before me</h6>
+            <h6 class="div-header">Sworn/declared before me (Commissioner for Oaths/Magistrate)</h6>
 
             <div class="sworn-info">
               <div>
@@ -1011,22 +1099,16 @@
 
             </div>
 
-            <div class="signature">
-              <h6 class="div-header">Signature of declarant <span>(Clicking the button is equivalent to a signature)</span></h6>
-              <div class="signature-box">
-                <input type="checkbox" name="signature" id="signature" value="Yes">
-                <label for="signature">I Accept</label>
-              </div>
-              
-            </div>
+            
 
             <div class="buttons">
               <input type="button" data-previous value="Previous" id="btn-previous">
-              <input type="button" value="Submit" id="btn-next">
+              <input type="button" onclick="location.href='final.html'" value="Submit" id="btn-next">
             </div>
             </div>
           </div>
       </form>
       <!-- End of form -->
   </body>
+  
 </html>

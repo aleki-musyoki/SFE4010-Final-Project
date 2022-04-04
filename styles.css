@@ -1,6 +1,66 @@
 *{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+ /* Navbar Section */
+ .navbar-light .navbar-brand {
+	color: #000;
+	height: 50px;
+}
+.navbar{
+    margin-bottom: 1em;
+    border-bottom: 1px solid #000;
+}
+.container span{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.logo{
+	font-family: 'Allessa Personal Use';
+	font-size: 30px;
+}
+.logo:hover{
+	color: #615555;
+}
+.navbar-brand img{
+	height: 50px;
+	overflow: hidden;	
+}
+.navbar-brand{
+	align-items: left;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light::scrolled{
+    background: #FFF !important;
+}
+.navbar-toggler {
+	background: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-item {
+	margin-left: 1em;
+    margin-right: 1em;
+}
+.nav-link.active, .nav-link:focus {
+	background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+
 .card{
     background-image: url(images/form\ background.png);
     padding-top: 2em;
@@ -25,6 +85,31 @@
     grid-template-columns: 20% 80%;
     grid-column-gap: 2em;
 }
+.side-content i{
+    position: absolute;
+    margin-top: 0.4em;
+    margin-left: 0.5em;
+}
+.side-content.error .fa-check{
+    visibility: hidden;
+}
+.side-content.success .fa-times{
+    visibility: hidden;
+}
+small{
+    margin-left: 1em;
+    color: red;
+    visibility: hidden;
+}
+.form-div.formError input{
+    border-color: red;
+}
+.form-div small{
+    visibility: hidden;
+}
+.form-div.formError small{
+    visibility: visible;
+}
 a{
     color:#000;
     text-decoration:none;
@@ -32,11 +117,18 @@ a{
 a:hover{
     color:#000;
     text-decoration: underline bold 1px solid #000;
+    cursor: pointer;
 }
 .content{
     border-left: 1px solid #000;
 }
 input[type="text"]{
+    border-radius: 5px;
+    height: 2em;
+    border: 1px solid #000;
+    width:  13em;
+}
+select{
     border-radius: 5px;
     height: 2em;
     border: 1px solid #000;
@@ -81,11 +173,72 @@ h6, h4{
 div{
     margin-bottom: 0.7em;
 }
+.main{
+    background-image: url(images/form\ background.png);
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 2em;
+    min-height: 85vh;
+    margin-bottom: 2em;
+    border: 2px solid #000;
+    border-radius: 2em;
+    align-items: center;
+}
+.main h1, h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    margin: auto;
+}
+.kiswahili button{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1em;
+    background-color: transparent;
+    font-size: 3em;
+}
+.english button{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1em;
+    font-size: 3em;
+    background-color: transparent;
+    border: 1px light #e5e5e5e5;
+    margin-left: -0.655em;
+}
+.kiswahili button:hover{
+    border: 1.5px solid #000;
+    color: #FFF;
+    border-radius: 1em;
+    background-color: rgb(68, 65, 65);
+}
+.english button:hover{
+    border: 1.5px solid #000;
+    color: #FFF;
+    border-radius: 1em;
+    background-color: rgb(68, 65, 65);
+}
+.main img{
+    border-radius: 1em;
+    width: 100%;
+    margin-left: 21em;
+}
 .buttons{
     margin-top: 3em;
     margin-left: 45em;
     display:flex;
-    height: 2.3em;
+    height: 2.3em !important;
+}
+a{
+    
+    height: 100%;
 }
 #btn-next{
     width: 6em;
@@ -121,6 +274,10 @@ div{
     display: grid;
     grid-template-columns: 33% 33%;
     margin-bottom: 2em;
+}
+#other-num{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 /* Identification */
@@ -221,16 +378,30 @@ div{
     grid-template-columns: 33% 33% 33%;
     margin-bottom: 1em;
 }
+input[type="radio"]{
+    float:left;
+    height: 1.1em;
+    width: 1.5em;
+   border-radius: 2px;
+}
 /* Part 4 - Employment Information */
 .work-details{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.work-details-two{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 .employment-nature{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 .employment-nature h6{
     grid-column-start: 1;
@@ -327,9 +498,6 @@ div{
 }
 .signature label{
     font-size: 0.85em;
-}
-.signature input{
-    height: 1.2em;
 }
 .signature-box{
     float: left;

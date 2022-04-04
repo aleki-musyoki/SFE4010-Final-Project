@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/07a4a1e3d0.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light scrolled">
+      <div class="container">
+        <img class="navbar-brand logo" src="images/logo.png" alt=""><span>EACC Self-Declaration Form</span>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beginning of the form -->
+      <form data-multi-step>
+        <!-- Part 1: General Information -->
+          <div class="card" id="div-1" data-step>
+            <h4 class="div-header">1. Taarifa Ya Jumla</h4>
+            <div class="side-nav" id="data-page">
+              <strong><p class="side-content error">1. Taarifa ya Jumla<i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i> </p></strong>
+              <a data-tag id="two"><p class="side-content error"> 2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a> 
+              <a data-tag id="three"><p class="side-content error">3. Hali Ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="four"><p class="side-content error">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="five"><p class="side-content error">5. Kufuzu Kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="six"><p class="side-content error">6. Uanachama Wa (Ma)shirika ya Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="seven"><p class="side-content error">7. Sababu za Kujitanagaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag id="eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i> </p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+            </div>
+            <div id="content" class="content">
+              <div class="names">
+                <h6 class="div-header">Majina</h6>
+                <div class="form-div">
+                  <label for="title">Cheo*</label>
+                  <select class="" type="text" name="title" id="title">
+                    <option value="dr">Dkt.</option>
+                    <option value="prof">Prof.</option>
+                    <option value="mr">Bw.</option>
+                    <option value="mrs">Bi.</option>
+                    <option value="miss">Binti</option>
+                  </select>
+                </div>
+
+                <div class="form-div">
+                  <label for="gender">Jinsia*</label>
+                  <select class="" type="text" name="gender" id="gender">
+                    <option value="male">Kiume</option>
+                    <option value="female">Kike</option>
+                  </select>
+                </div>
+                <div class="form-div">
+                  <label for="first-name" id="first-name">Jina la Kwanza*</label>
+                  <input class="" type="text" required name="first-name" id="first-name">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="middle-name">Jina la Katikati*</label>
+                  <input class="" type="text" required name="middle-name" id="middle-name">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="surname">Jina la Ukoo*</label>
+                  <input class="" type="text" required name="surname" id="surname">
+                  <small>Cannot be blank</small>
+                </div>
+                <div>
+                  <label for="surname">Majina Mengine</label>
+                  <input type="text" name="surname" id="surname">
+                </div>
+
+              </div>
+
+              <div class="identification">
+                <h6 class="div-header">Vitambulisho</h6>
+                <div class="form-div">
+                  <label for="national-id">Na. ya Kitambulisho*</label>
+                  <input class="" type="text" required name="national-id" id="national-id">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="passport-no">Na. ya Pasipoti*</label>
+                  <input class="" type="text" required name="passport-no" id="passport-no">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                    <label for="passport-no">Tarehe ya Muda wa Pasipoti Kuisha*</label>
+                    <input class="" type="text" required name="passport-no" id="passport-no">
+                    <small>Cannot be blank</small>
+                  </div>
+                <div class="form-div">
+                  <label for="kra-pin">Na. ya PIN ya KRA*</label>
+                  <input class="" type="text" required name="kra-pin" id="kra-pin">
+                  <small>Cannot be blank</small>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                  <h6 class="div-header">Contact Information</h6>
+
+                  <div class="form-div">
+                    <label for="email">Anwani ya Baruapepe*</label>
+                    <input class="" type="text"  required name="email" id="email">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="telephone">Na. ya Simu*</label>
+                    <input class="" type="text" required name="telephone" id="telephone">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="mobile">Na. ya Rununu*</label>
+                    <input class="" type="text" required name="mobile" id="mobile">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="other-num">Nambari Nyingine</label>
+                    <input class="" type="text" required name="other-num" id="other-num">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="postal-address">Anwani ya Posta*</label>
+                    <input class="" type="text" required name="postal-address" id="postal-address">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="postal-code">Msimbo*</label>
+                    <input class="" type="text" required name="postal-code" id="postal-code">
+                    <small>Cannot be blank</small>
+                  </div>
+              </div>
+
+              <div class="residence">
+                  <h6 class="div-header">Makazi</h6>
+                  <div class="form-div">
+                    <label for="country">Nchi*</label>
+                    <input class="" type="text" required name="country" id="country">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="town">Mji/Jiji*</label>
+                    <input class="" type="text" required name="town" id="town">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="county">Kaunti*</label>
+                    <input class="" type="text" required name="county" id="county">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="district">Wilaya*</label>
+                    <input class="" type="text" required name="district" id="district">
+                    <small>Cannot be blank</small>
+                  </div>
+                  <div class="form-div">
+                    <label for="estate">Mtaa/Mji/Lokesheni*</label>
+                    <input class="" type="text" required name="estate" id="estate">
+                    <small>Cannot be blank</small>
+                  </div>
+              </div>
+
+              <div class="buttons">
+                <input type="button" onclick="formValidate()" data-next value="Endelea" id="btn-next">
+              </div>
+            </div>
+          </div>
+          <!-- Part 2: Birth & Nationality Information -->
+          <div class="card" id="div-2" data-step>
+            <h4 class="div-header">2. Birth & Nationality Information</h4>
+            <div class="side-nav">
+              <a href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">2. Taarifa ya Kuzaliwa na Utaifa<i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-tag href="#three"><p class="side-content error">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#four"><p class="side-content error">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#five"><p class="side-content error">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#six"><p class="side-content error">6. Uanachama wa (Ma)shirika ya Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#seven"><p class="side-content error">7. Sababu ya Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>            </div>
+
+            <div class="content">
+              <div class="birth-info">
+                <h6 class="div-header">Taarifa ya Kuzaliwa</h6>
+                <div class="form-div">
+                  <label for="dob">Tarehe ya Kuzaliwa*</label>
+                  <input type="date" required name="dob" id="dob">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="birth-cert">Na. ya Cheti ya Kuzaliwa*</label>
+                  <input type="text" required name="birth-cert" id="birth-cert">
+                  <small>Cannot be blank</small>
+                </div>
+
+                </div class="form-div">
+                <div class="birth-location">
+                <h6 class="birth-sub-head">Lokesheni</h6>
+
+                <div class="form-div">
+                  <label for="birth-place">Mahali pa Kuzaliwa*</label>
+                  <input type="text" required name="birth-place" id="birth-place">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="birth-district">Wilaya ya Kuzaliwa*</label>
+                <input type="text" required name="birth-district" id="birth-district">
+                <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="birth-county">Kaunti ya Kuzaliwa*</label>
+                  <input type="text" required name="birth-county" id="birth-county">
+                  <small>Cannot be blank</small>
+                </div>
+                <div class="form-div">
+                  <label for="birth-country">Nchi ya Kuzaliwa*</label>
+                <input type="text" required name="birth-country" id="birth-country">
+                <small>Cannot be blank</small>
+                </div>
+
+              </div>
+
+              <div class="nationality">
+                <h6 class="div-header">Utaifa</h6>
+                
+                <p class="question">Je, wewe ni Mkenya?*</p>
+
+                <div class="form-div">
+                  <input type="radio" name="kenyan" id="kenyan-yes" value="Yes">
+                  <label for="kenyan-yes">Ndio</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="kenyan" id="kenyan-no" value="No">
+                  <label for="kenyan-no">La</label>
+                </div>
+
+                <p class="question">Je, una utaifa mwingine usipokuwa ule wa Kenya??*</p>
+                <div class="form-div">
+                  <input type="radio" name="dual-citizen" id="dual-yes" value="Yes">
+                  <label for="dual-yes">Ndio</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="dual-citizen" id="dual-no" value="No">
+                  <label for="dual-no">La</label>
+                </div>
+
+                <div>
+                  <label for="dual-details">Ikiwa ni ndio, peana maelezo zaidi</label>
+                  <input type="text" required name="dual-details" id="dual-details">
+                </div>
+
+              </div>
+
+              <div class="language">
+                <h6 class="div-header">Lugha Unazozungumza</h6>
+                <div class="form-div">
+                  <label for="first-language">Lugha ya Kwanza*</label>
+                  <input type="text" required name="first-language" id="first-language">
+                  <small>Cannot be blank</small>
+                </div>
+                <div>
+                  <label for="second-language">Lugha ya Pili</label>
+                  <input type="text" name="second-language" id="second-language">
+                </div>
+
+                <div>
+                  <label for="other-language">Lugha Nyingine</label>
+                  <input type="text" name="other-language" id="other-language">
+                </div>
+
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Rudi" id="btn-previous">
+                <input type="button" data-next value="Endelea" id="btn-next">
+              </div>  
+            </div>
+          </div>
+
+          <!-- Part 3: Marital status -->
+
+          <div class="card" id="div-3" data-step>
+
+                <h4 class="div-header">3. Hali ya Ndoa</h4>
+
+                <div class="side-nav">
+                  <a data-tag href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <strong><p class="side-content error">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+                  <a data-tag href="#four"><p class="side-content error">4. Taarifa ya Kuajiriwa<i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#five"><p class="side-content error">5. Kufuzu kwa kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#six"><p class="side-content error">6. Uanachama wa (Ma)shirika ya Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#seven"><p class="side-content error">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                </div>
+
+                <div class="content">
+                  <h6 class="div-header">Hali ya Ndoa</h6>
+                  <div class="marital-status">
+                    <p class="question">Je, hali yako ya ndoa ni ipi?</p>
+                    <div>
+                      <input type="radio" name="marital-options" id="single" value="Single">
+                      <label for="single">Ningali sijaoa/sijaolewa</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="married" value="Married">
+                      <label for="married">Nimeoa/Nimeolewa</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="separated" value="Separated">
+                      <label for="separated">Nimetengana</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="divorced" value="Divorced">
+                      <label for="divorced">Nimetalakiana</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="marital-options" id="widowed" value="Widowed">
+                      <label for="widowed">Nimefiwa</label>
+                    </div>
+
+                  </div>
+
+                  <div class="spouse-details">
+                    <h6 class="div-header">Kama Umeoa, Toa Majina ya Mume/Mke(Wa) Wako</h6>
+                    <div>
+                      <label for="spouse-firstname">Jina la Kwanza</label>
+                      <input type="text" name="spouse-firstname" id="spouse-firstname">
+                    </div>
+                    <div>
+                      <label for="spouse-middlename">Jina la Katikati</label>
+                      <input type="text" name="spouse-middlename" id="spouse-middlename">
+                    </div>
+                    <div>
+                      <label for="spouse-surname">Jina la Ukoo</label>
+                    <input type="text" name="spouse-surname" id="spouse-surname">
+                    </div>
+
+                    <div>
+                      <label for="spouse-nationality">Utaifa</label>
+                      <input type="text" required name="spouse-nationality" id="spouse-nationality">
+                    </div>
+                  </div>
+
+                  <div class="child-checkbox">
+                    <h6 class="div-header">Watoto</h6>
+                    <p class="question">Je, una mtoto chini ya umri wa miaka kumi na minane?</p>
+
+                    <div>
+                      <input type="radio" name="children" id="child-yes" value="Yes">
+                    <label for="child-yes">Ndio</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" name="children" id="child-no" value="No">
+                    <label for="child-no">La</label>
+                    </div>
+
+                  </div>
+
+                  <div class="child-details">
+                    <h6 class="div-header">Ikiwa una watoto chini ya umri wa miaka kumi na minane, toa majina yao</h6>
+                    <div>
+                      <label for="child-firstname">Jina la Kwanza</label>
+                      <input type="text" name="child-firstname" id="child-firstname">
+                    </div>
+
+                    <div>
+                      <label for="child-middlename">Jina la Katikati</label>
+                      <input type="text" name="child-middlename" id="child-middlename">
+                    </div>
+
+                    <div>
+                      <label for="child-surname">Jina la Ukoo</label>
+                      <input type="text" name="child-surname" id="child-surname">
+                    </div>
+                  </div>
+
+                  <div class="buttons">
+                    <input type="button" data-previous value="Rudi" id="btn-previous">
+                    <input type="button" data-next value="Endelea" id="btn-next">
+                  </div>
+                </div>
+            </div>
+
+            <!-- Part 4: Employment Information -->
+
+          <div class="card" id="four" data-step>
+              <h4 class="div-header">4. Taarifa ya Kuajiriwa</h4>
+
+              <div class="side-nav" data-page>
+                <a href="#one"><p class="side-content success">1. Taarifa ya Jumla<i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <strong><p class="side-content error">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+                  <a data-tag href="#five"><p class="side-content error">5. Kufuzu kwa kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#six"><p class="side-content error">6. Uanachama wa (Ma)shirika ya Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#seven"><p class="side-content error">7. Sababu ya Kujitanagaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili<i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-previous href="#nine"><p class="side-content error">8-b.Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+                  <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              </div>
+
+              <div class="content">
+                <h6 class="div-header">Taarifa ya Kuajiriwa <span>(Ikiwa hujawai ajiriwa, jaza kila sehemu na neno 'N/A' na upeane tarehe ya leo)</span></h6>
+                <div class="work-details">
+                    <div>
+                      <label for="employer-name">Jina la Mwajiri</label>
+                      <input type="text" name="employer-name" id="employer-name">
+                    </div>
+                    <div>
+                      <label for="position">Cheo/Wadhifa</label>
+                      <input type="text" name="position" id="position">
+                    </div>
+                    <div>
+                      <label for="start-date">Tarehe ya Kuajiriwa kwa Kwanza</label>
+                      <input type="date" name="start-date" id="start-date">
+                    </div>
+                    <div>
+                      <label for="present-date">Tarehe ya Kuajiriwa kwa Sasa</label>
+                      <input type="date" name="present-date" id="present-date">
+                    </div>
+                    <div>
+                      <label for="workstation">Kituo cha kazi</label>
+                    <input type="text" name="workstation" id="workstation-one">
+                    </div>
+                </div>
+                  <div class="work-details-two">
+                    <div>
+                        <label for="employer-name">Jina la Mwajiri</label>
+                        <input type="text" name="employer-name" id="employer-name">
+                      </div>
+                      <div>
+                        <label for="position">Cheo/Wadhifa</label>
+                        <input type="text" name="position" id="position">
+                      </div>
+                      <div>
+                        <label for="start-date">Tarehe ya Kuajiriwa kwa Kwanza</label>
+                        <input type="date" name="start-date" id="start-date">
+                      </div>
+                      <div>
+                        <label for="present-date">Tarehe ya Kuajiriwa kwa Sasa</label>
+                        <input type="date" name="present-date" id="present-date">
+                      </div>
+                      <div>
+                        <label for="workstation">Kituo cha kazi</label>
+                      <input type="text" name="workstation" id="workstation-one">
+                      </div>
+                  </div>
+
+                
+  
+                <div class="employment-nature">
+                  <h6 class="div-header">Aina ya Kuajiriwa</h6>
+                  <div>
+                    <input type="radio" name="employment-options" id="constitutional" value="constitutional">
+                    <label for="constitutional">Kikatiba</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="employment-options" id="elective" value="elective">
+                    <label for="elective">Kuteuliwa</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="employment-options" id="permanent" value="permanent">
+                    <label for="permanent">Kudumu</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="employment-options" id="contractual" value="contractual">
+                    <label for="contractual">Kikandarasi</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" name="employment-options" id="employment-other" value="employment-other">
+                    <label for="employment-other">Nyingine</label>
+                  </div>
+
+                  <div>
+                    <label for="employment-other-text">Maelezo ya Nyingine</label>
+                    <input type="text" name="employment-other-text" id="employment-other-text">
+                  </div>
+
+                </div>
+
+                <div class="buttons">
+                  <input type="button" data-previous value="Rudi" id="btn-previous">
+                  <input type="button" data-next value="Endelea" id="btn-next">
+                </div>
+              </div>
+            </div>
+          
+            <!-- Part 5: Educational Information -->
+
+          <div class="card" id="five" data-step>
+            <h4 class="div-header">5. Kufuzu kwa Kielimu</h4>
+
+            <div class="side-nav">
+              <a data-tag href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#four"><p class="side-content success">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong data-tag><p class="side-content error">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-tag href="#six"><p class="side-content error">6. Uanachama wa (Ma)shirika za Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#seven"><p class="side-content error">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+            </div>
+
+            <div class="content">
+              <div class="school-attended">
+                <h6 class="div-header">Vyeo vya elimu</h6>
+                    <div>
+                      <input type="checkbox" name="education-options" id="primary" value="primary">
+                      <label for="primary">Cheti cha Msingi</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="education-options" id="secondary" value="secondary">
+                      <label for="secondary">Shule ya Upili</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="education-options" id="a-level" value="a-level">
+                      <label for="a-level">Kiwango cha 'A'</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="education-options" id="diploma" value="diploma">
+                      <label for="diploma">Stashahada</label>
+                    </div>
+  
+                    <div>
+                      <input type="checkbox" name="education-options" id="degree" value="degree">
+                      <label for="degree">Shahada</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" name="education-options" id="masters" value="masters">
+                      <label for="masters">Uzamili</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" name="education-options" id="phd" value="phd">
+                      <label for="phd">Uzamifu</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" name="education-options" id="education-other" value="education-other">
+                      <label for="education-other-text">Vingine</label>
+                    </div>
+  
+                    <div id="education-other-last">
+                      <label for="education-other-text">Maelezo ya vingine</label>
+                      <input type="text" name="education-other-text" id="education-other-text">
+                    </div>
+              </div>
+
+              <div class="highest-education">
+                <h6 class="div-header">Kufuza kwa Juu Zaidi Katika Kikademia Ulikopata</h6>
+                <div>
+                  <label for="qualification">Kufuzu</label>
+                  <input type="text" name="qualification" id="qualification">
+                </div>
+
+                <div>
+                  <label for="institution">Taasisi</label>
+                  <input type="text" name="institution" id="institution">
+                </div>
+
+                <div>
+                  <label for="year">Mwaka</label>
+                  <input type="text" name="year" id="year">
+                </div>
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Rudi" id="btn-previous">
+                <input type="button" data-next value="Endelea" id="btn-next">
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Part 6: Membership to Professional Organizations -->
+
+          <div class="card" id="six" data-step>
+            <h4 class="div-header">6. Uanachama wa (Ma)shirika ya Kitaalamu</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#four"><p class="side-content success">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#five"><p class="side-content success">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">6. Uanachama wa (Ma)shirika za Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-next href="#seven"><p class="side-content error">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-next href="#eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+            </div>
+
+            <div class="content">
+              <div class="membership-details">
+                <h6 class="div-header">Taarifa ya Mashirika, kama yapo</h6>
+                <div>
+                  <label for="organization-name">Jina la Shirika</label>
+                  <input type="text" name="organization-name" id="organization-name">
+                </div>
+
+                <div>
+                  <label for="membership-number">Na. ya Uanachama</label>
+                  <input type="text" name="membership-number" id="membership-number">
+                </div>
+
+                <div>
+                  <label for="admission-date">Tarehe ya Kuandikishwa</label>
+                  <input type="date" name="admission-date" id="admission-date">
+                </div>
+
+                <div>
+                  <label for="organization-name">Jina la Shirika</label>
+                  <input type="text" name="organization-name" id="organization-name">
+                </div>
+
+                <div>
+                  <label for="membership-number">Na. ya Uanachama</label>
+                  <input type="text" name="membership-number" id="membership-number">
+                </div>
+
+                <div>
+                  <label for="admission-date">Tarehe ya Kuandikishwa</label>
+                  <input type="date" name="admission-date" id="admission-date">
+                </div>
+
+                <div>
+                    <label for="organization-name">Jina la Shirika</label>
+                    <input type="text" name="organization-name" id="organization-name">
+                  </div>
+  
+                  <div>
+                    <label for="membership-number">Na. ya Uanachama</label>
+                    <input type="text" name="membership-number" id="membership-number">
+                  </div>
+  
+                  <div>
+                    <label for="admission-date">Tarehe ya Kuandikishwa</label>
+                    <input type="date" name="admission-date" id="admission-date">
+                  </div>
+  
+                  <div>
+                    <label for="organization-name">Jina la Shirika</label>
+                    <input type="text" name="organization-name" id="organization-name">
+                  </div>
+  
+                  <div>
+                    <label for="membership-number">Na. ya Uanachama</label>
+                    <input type="text" name="membership-number" id="membership-number">
+                  </div>
+  
+                  <div>
+                    <label for="admission-date">Tarehe ya Kuandikishwa</label>
+                    <input type="date" name="admission-date" id="admission-date">
+                  </div>
+
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Rudi" id="btn-previous">
+                <input type="button" data-next value="Endelea" id="btn-next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 7: Reason(s) for declaration -->
+
+          <div class="card" id="seven" data-step>
+            <h4 class="div-header">7. Sababu za Kujitangaza</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#four"><p class="side-content success">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#five"><p class="side-content success">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#six"><p class="side-content success">6. Membership of professional organizations <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a href="#eight"><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+            </div>
+
+            <div class="content">
+              <div class="reasons">
+                <h6 class="div-header">Sababu za kujitangaza</h6>
+                <div>
+                  <input type="radio" name="employment-options" id="permanent" value="permanent">
+                  <label for="permanent">Upigaji Kura</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="employment-options" id="contractual" value="contractual">
+                  <label for="contractual">Kuajiriwa</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="employment-options" id="employment-other" value="employment-other">
+                  <label for="employment-other">Nyingine</label>
+                </div>
+
+                <div id="reasons-other">
+                  <label for="reasons-other-text">Maelezo ya nyingine</label>
+                  <input type="text" name="reasons-other-text" id="reasons-other-text">
+                </div>
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Rudi" id="btn-previous">
+                <input type="button" data-next value="Endelea" id="btn-next">
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Part 8-a: Moral and ethical questions -->
+
+          <div class="card" id="eight" data-step>
+            <h4 class="div-header">8. Maswali ya Nidhamu na Kimaadili</h4>
+
+            <div class="side-nav">
+              <a href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#four"><p class="side-content success">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#five"><p class="side-content success">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#six"><p class="side-content success">6. Uanachama wa (Ma)shirika za Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#seven"><p class="side-content success">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-previous href="#nine"><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-tag href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>            </div>
+
+            <div class="content moral">
+              <div>
+                <p class="moral-questions">1. Umewahi kujihusisha na hali yoyote ya kutokuwa mwaminifu katika
+                    kazi zako na shughuli za umma?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+              <label for="moral-no">La</label>
+              </div>
+
+              <div>
+                <p class="moral-questions">2. Umewahi kutumia vibaya ofisi ya umma?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">3. Umewahi kuwakilisha kwa njia isiyofaataarifa kwa umma?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">4.  Umewahi kujihusisha katika tabia mbaya huku ukitaka kujinufaisha
+                    kibinafsi?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+              <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">5. Umewahi kutumia vibaya rasilimali za umma?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">6. Umewahi kubagua yeyote kwa misingi yoyote mbali na vile ilivyoelezwa
+                    katika Katiba au sheria yoyote nyingine?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">7. Je, umewahi kudanganya katika rekodi rasmi au za kibinafsi?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">8.  Umewahi kupigwa teke au kuondolewa kutoka kwenye Rejista ya
+                    Wanachama wa shirika lako la kitaalamu?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+
+              <div class="buttons">
+                <input type="button" data-previous value="Rudi" id="btn-previous">
+                <input type="button" data-next value="Endelea" id="btn-next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 8-b: Moral and ethical questions -->
+
+          <div class="card" id="nine" data-step>
+            <h4 class="div-header">8-b. Maswali ya Nidhamu na Kimaadili</h4>
+
+            <div class="side-nav">
+              <a data-previous href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#four"><p class="side-content success">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#five"><p class="side-content success">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#six"><p class="side-content success">6. Uanachama wa (Ma)shirika za Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#seven"><p class="side-content success">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#eight"><p class="side-content success">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+              <a data-next href="#ten"><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+            </div>
+
+            <div class="content moral">
+              <div>
+                <p class="moral-questions">9. Umewahi kujipata katika hali ya leseni yako ya kikazi au ya kiufundi
+                    kutupiliwa mbali na/au vinginevyo kuchukuliwa hatua nyingine ya
+                    kinidhamu katika nchi ya Kenya au nchi yoyote nyingine?
+                </p>
+              </div>
+              
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">10. Umewahi kufutwa kazi katika ajira kutokana na ukosefu wa uadilifu?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">11.  Kama umewahi kuwa ofisa wa umma, umewahi kushindwa kutangaza
+                    Mapato yako, Mali na Gharama kama unavyohitajika katika Kifungu cha
+                    sheria cha Maadili ya Ofisa wa Umma, 2003?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">12. Umewahi kuwa mada katika taratibu za kinidhamu au kihalifu kwa
+                    kuvunja kifungu cha sheria cha Maadili ya Ofisa wa Umma 2003, au
+                    Msimbo ulioainishwa hapo chini?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">13.  Umewahi kushtakiwa kwa kosa lolote na kuhukumiwa kifungo gerezani
+                    kwa kipindi kipatacho miezi sita?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              <div>
+                <p class="moral-questions">14. Umewahi kutuma ombi la Cheti cha kuondolewa Hatia au Cheti cha
+                    Kinidhamu au cha visa au nyaraka nyingine zinazoidhinisha kazi katika
+                    ofisi ya umma na hivyo basi wewe kunyimwa na/ au kukataliwa kwa
+                    sababu yoyote nchini Kenya au nchi yoyote nyingine?
+                </p>
+              </div>
+
+              <div>
+                <input type="radio" name="children" id="moral-yes" value="Yes">
+                <label for="moral-yes">Ndio</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="children" id="moral-no" value="No">
+                <label for="moral-no">La</label>
+              </div>
+  
+              
+
+              <div class="buttons">
+                <input type="button" data-previous value="Rudi" id="btn-previous">
+                <input type="button" data-next value="Endelea" id="btn-next">
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 9: Oath and declaration -->
+
+          <div class="card" id="ten" data-step>
+            <h4 class="div-header">9. Kiapo na Uthibitishwaji</h4>
+
+            <div class="side-nav">
+              <a data-previous href="#one"><p class="side-content success">1. Taarifa ya Jumla <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#two"><p class="side-content success">2. Taarifa ya Kuzaliwa na Utaifa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#three"><p class="side-content success">3. Hali ya Ndoa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#four"><p class="side-content success">4. Taarifa ya Kuajiriwa <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#five"><p class="side-content success">5. Kufuzu kwa Kielimu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#six"><p class="side-content success">6. Uanachama wa (Ma)shirika za Kitaalamu <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#seven"><p class="side-content success">7. Sababu za Kujitangaza <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#eight"><p class="side-content success">8. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <a data-previous href="#nine"><p class="side-content success">8-b. Maswali ya Nidhamu na Kimaadili <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></a>
+              <strong><p class="side-content error">9. Kiapo na Uthibitishwaji <i class="fa fa-check" style="color:green" aria-hidden="true"></i><i class="fa fa-times" style="color:red" aria-hidden="true"></i></p></strong>
+            </div>
+
+            <div class="content">
+              <h6 class="div-header">Kiapo na uthibitishwaji</h6>
+            <p class="oath">Ninaapa ya kwamba (ninathibitisha) na kuidhinisha, katika adhabu ya kujitangaza kwa uongo chini
+                ya kifungu cha sheria cha Viapo na Kujitangaza Kisheria(Ibara 15 ya Sheria za Kenya), kwamba
+                kauli zote zilizotajwa katika kujitangaza huku ni za kweli na sahihi kwa kadri ninavyojua.
+            </p>
+
+            <div class="oath-info">
+              <div>
+                <label for="organization-name">Mnamo Tarehe</label>
+                <input type="text" name="organization-name" id="organization-name">
+              </div>
+
+              <div>
+                <label for="membership-number">Kwenye</label>
+                <input type="text" name="membership-number" id="membership-number">
+              </div>
+
+              <div>
+                <label for="admission-date">Siku hii ya</label>
+                <input type="date" name="admission-date" id="admission-date">
+              </div>
+            </div>
+            <div class="signature">
+              <h6 class="div-header">Saini ya Anayejitangaza</h6>
+              <div class="signature-box">
+                <input type="file" name="signature" id="signature" value="Yes">
+              </div>
+              
+            </div>
+
+            <h6 class="div-header">Aliyelishwa Kiapo/Tangazwa Mbele Yangu (Kamishna wa Kiapo/Hakimu)</h6>
+
+            <div class="sworn-info">
+              <div>
+                <label for="sworn-this">Mnamo</label>
+                <input type="text" name="sworn-this" id="sworn-this">
+              </div>
+              
+              <div>
+                <label for="sworn-day">Siku hii ya</label>
+                <input type="text" name="sworn-day" id="sworn-day">
+              </div>
+
+              <div>
+                <label for="sworn-year">(mwaka)</label>
+                <input type="date" name="sworn-year" id="sworn-year">
+              </div>
+
+              <div>
+                <label for="sworn-at">Katika mahali hapa</label>
+                <input type="text" name="sworn-at" id="sworn-at">
+              </div>
+
+            </div>
+
+            
+
+            <div class="buttons">
+              <input type="button" data-previous value="Rudi" id="btn-previous">
+              <input type="button" value="Maliza" id="btn-next">
+            </div>
+            </div>
+          </div>
+      </form>
+      <!-- End of form -->
+  </body>
+  
+</html>
