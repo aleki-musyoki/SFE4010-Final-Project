@@ -481,6 +481,12 @@ input[type="radio"]{
 .moral .btn-next{
     width: 6em;
 }
+.moral input[type="checkbox"]{
+    border-radius: 5px;
+    width: 1.5em;
+    margin-right: 0.5em;
+    border: 1px solid #000;
+}
 /* Part 9 - Oath and declaration */
 .oath-info{
     display: grid;
